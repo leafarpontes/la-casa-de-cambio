@@ -4,7 +4,7 @@
 #### Desenvolvedores:
 - [Rafael Pontes](https://github.com/leafarpontes)
 - [Alessandra Murat](https://github.com/AlessandraMurat)
-- [Marcelly Sanchez](https://github.com/marcellysanches)
+- [Marcelly Sanches](https://github.com/marcellysanches)
 - [Alessandro Almeida](https://github.com/asalmeidarj)
 - [Margareth Reis](https://github.com/MagBreis)
 - [Wanessa Lane](https://github.com/wanessalanne)
