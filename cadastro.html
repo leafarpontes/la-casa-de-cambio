@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-modelo.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo-img" src="./img/logo2-cut.png" alt=""></a>
+        <nav id="navegacao">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about-us">SOBRE</a></li>
+                <li><a href="calculadora(1).html">CALCULADORA</a></li>                
+                <li><a href="conversao.html">CONVERSÃO</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>  
+            </ul>
+            
+        </nav>
+    </header>
+
+    <div id="main-cadastro">   
+        <div id="botoes-header">
+            <button id="btn-acessibilidade-aumenta">+</button>
+            <button id="btn-acessibilidade-diminui">-</button>
+            <button id="modo-escuro" onclick="alternarModoEscuroCadastro()">Modo Escuro</button>
+        </div>     
+        <form id="form-container">           
+            <div class="linha">
+                <!-- <label for="nome">Nome completo</label> -->
+                <input id="nome" type="text" style="text-transform: uppercase;" oninput="validaNome()" placeholder="Nome completo">
+            </div>
+            <div class="linha">
+                <!-- <label for="cpf">CPF</label> -->
+                <input type="text" id="cpf" oninput="valida_cpf()" maxlength="11" placeholder="CPF">
+            </div>
+            <div class="linha">
+                <label for="data-nasc">Data de nascimento</label>
+                <input type="date" name="data-nasc" id="data-nasc" onblur="validarDataNasc()">
+            </div>
+            <div class="linha">
+                <h3 class="titulo-linha">Sexo</h3>
+                <select id="sexo">
+                    <option value="Masculino" id="masc">Masculino</option>
+                    <option value="Feminino" id="fem">Feminino</option>
+                    <option value="Não informado" id="ni">Não informado</option>
+                </select>
+            </div>
+            <div class="linha">
+                <!-- <label for="email">E-mail</label> -->
+                <input id="msgemail" type="text" onblur="validacaoEmail(this)" placeholder="E-MAIL">
+            </div>
+            <div class="linha">
+                <button type="reset" id="btn_limpar">Limpar</button>
+                <button onclick="exibirInfo(); return false;" id="btn_enviar">Cadastrar</button>
+            </div>
+            <div id="displayInfo">
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer-container">
+        <section class="footer-logo">
+            <img src="img/logo2-cut.png" alt="logo-rodape" width="250px">
+        </section>
+        <section class="redes-sociais">
+            <a href="https://www.facebook.com/SoulCodeAcademy/" target="_blank"><img class="redes-img" src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img class="redes-img" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="copyright-footer">
+            <span id="copyright-text">&copy; La Casa de Câmbio - 2021. Todos os direitos reservados.</span>
+        </section>
+    </footer>
+
+    <script src="js/modelo.js"></script>
+    <script src="js/cadastro-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-modelo.css">
+    <link rel="stylesheet" href="./css/style-calculadora(1).css">    
+    <title>Calculadora</title>
+</head>
+
+<body id="body-calc">    
+    <header>
+        <a href="index.html"><img id="logo-img" src="./img/logo2-cut.png" alt=""></a>
+        <nav id="navegacao">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about-us">SOBRE</a></li>
+                <li><a href="calculadora(1).html">CALCULADORA</a></li>                
+                <li><a href="conversao.html">CONVERSÃO</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>  
+            </ul>            
+        </nav>
+    </header>
+    <main id="main-calc">
+        <div id="botoes-header">
+            <button id="btn-acessibilidade-aumenta">+</button>
+            <button id="btn-acessibilidade-diminui">-</button>            
+        </div>
+        <section id="sec-titulo">
+            <h2 id="titulo-calc">Calculadora online<h2><br>
+            <p id="text-calc">Faça cálculos básicos e avançados diretamente no browser</p>
+            <br>
+            
+            <button id="sobre_modo"> Para calculadora avançada clique no botão <img src="./img/exchange.png" alt="setas" id="img_seta"> </button>
+        </section>    
+        <div class="calculator">
+            <div id="div-modo">
+                <button id="btn-modo"><img src="./img/exchange.png" alt="setas" id="img_seta"></button>
+            </div>
+            <div class="display" id="display"></div>
+            <div class="calculator-buttons">
+                <button id="limparDisplay">CE</button>
+                <button id="limparCalculo">C</button>
+                <button id="backspace">«</button>            
+                <button id="sci-sqrt">&radic;</button>
+                <button id="sci-quadrado">x&sup2;</button>
+                <button id="sci-cubo">x&sup3;</button>
+                <button id="sci-pi">&pi;</button>
+                <button id="operadorDivisor">/</button>
+                <button id="tecla7">7</button>
+                <button id="tecla8">8</button>
+                <button id="tecla9">9</button>
+                <button id="operadorMultiplicar">*</button>
+                <button id="tecla4">4</button>
+                <button id="tecla5">5</button>
+                <button id="tecla6">6</button>
+                <button id="operadorSubtrair">-</button>
+                <button id="tecla1">1</button>
+                <button id="tecla2">2</button>
+                <button id="tecla3">3</button>
+                <button id="operadorAdicionar">+</button>
+                <button id="inverter">±</button>
+                <button id="tecla0">0</button>
+                <button id="decimal">.</button>
+                <button id="igual">=</button>
+            </div>
+        </div>
+</main>
+    <footer class="footer-container">
+        <section class="footer-logo">
+            <img src="img/logo2-cut.png" alt="logo-rodape" width="250px">
+        </section>
+        <section class="redes-sociais">
+            <a href="https://www.facebook.com/SoulCodeAcademy/" target="_blank"><img class="redes-img" src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img class="redes-img" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="copyright-footer">
+            <span id="copyright-text">&copy; La Casa de Câmbio - 2021. Todos os direitos reservados.</span>
+        </section>
+    </footer>
+    <script src="./js/calculadora(1).js"></script>
+    <script src="./js/modelo.js"></script>
+</body>
+</html>

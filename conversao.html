@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-modelo.css">
+
+</head>
+<body id="body-conversao">
+    <header>
+        <a href="index.html"><img id="logo-img" src="./img/logo2-cut.png" alt=""></a>
+        <nav id="navegacao">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about-us">SOBRE</a></li>
+                <li><a href="calculadora(1).html">CALCULADORA</a></li>                
+                <li><a href="conversao.html">CONVERSÃO</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>  
+            </ul>
+            
+        </nav>
+    </header>
+    <main id="main-conversao">
+        <div id="botoes-header">
+            <button id="btn-acessibilidade-aumenta">+</button>
+            <button id="btn-acessibilidade-diminui">-</button>
+            <button id="modo-escuro" onclick="alternarModoEscuroConversao()">Modo Escuro</button>
+        </div>
+        <h1 id="h1-conversao">Conversor de Moedas</h1>
+        <section id="container-conversao">
+            <div id="box1">
+                <div class="coluna">
+                    <h3 class="sub-conversao">Valor: </h3>
+                    <!-- <label for="input-valor-conversao">Valor</label> -->
+                    <input type="text" name="input-valor-conversao" id="input-valor-conversao" placeholder="Digite um valor">
+                </div>
+                <div class="coluna">
+                    <h3 class="sub-conversao">De:</h3>
+                    <!-- <label for="conversor-entrada">Converter de</label> -->
+                    <select name="conversor-entrada2" id="conversor-entrada">
+                        <option value="USD">Dólar Americano</option>
+                        <option value="CAD">Dólar Canadense</option>
+                        <option value="BRL">Real Brasileiro</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">Libra Esterlina</option>
+                        <option value="ARS">Peso Argentino</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <h3 class="sub-conversao">Para: </h3>
+                    <!-- <label for="conversor-saida">Converter para</label> -->
+                    <select name="conversor-saida" id="conversor-saida">
+                        <option value="USD">Dólar Americano</option>
+                        <option value="CAD">Dólar Canadense</option>
+                        <option value="BRL">Real Brasileiro</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">Libra Esterlina</option>
+                        <option value="ARS">Peso Argentino</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div id="resultado-conversao">
+                <p></p>
+            </div>
+            <div id="box-botao">
+                <button id="botao-conversao">Converter</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <section class="footer-logo">
+            <img src="img/logo2-cut.png" alt="logo-rodape" width="250px">
+        </section>
+        <section class="redes-sociais">
+            <a href="https://www.facebook.com/SoulCodeAcademy/" target="_blank"><img class="redes-img" src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img class="redes-img" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="redes-img" src="img/linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="copyright-footer">
+            <span id="copyright-text">&copy; La Casa de Câmbio - 2021. Todos os direitos reservados.</span>
+        </section>
+    </footer>
+    <script src="./js/script-conversao.js"></script>
+    <script src="js/modelo.js"></script>
+</body>
+</html>

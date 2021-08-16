@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de Câmbio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style-modelo.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo-img" src="./img/logo2-cut.png" alt=""></a>
+        <nav id="navegacao">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about-us">SOBRE</a></li>
+                <li><a href="calculadora(1).html">CALCULADORA</a></li>
+                <li><a href="conversao.html">CONVERSÃO</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="modelo-main">
+        <div id="botoes-header">
+            <button id="btn-acessibilidade-aumenta">+</button>
+            <button id="btn-acessibilidade-diminui">-</button>
+            <button id="modo-escuro" onclick="alternarModoEscuro()">Modo Escuro</button>
+        </div>
+        <section id="banner-principal">
+            <div id="texto-principal">
+                <h1>Conhece alguém que irá <br>fazer uma viagem internacional <br>ou intercâmbio?</h1>
+            </div>
+        </section>
+        <!-- <section class="meio-main">
+            <section class="conteudo-main">
+                <h2 class="h2-main"> Atenção na hora de comprar moeda estrangeira </h2>
+                <p class="p-meio"> Fazer uma pesquisa sobre as melhores opções de câmbio é fundamental na hora de
+                    comprar moeda estrangeira. Aqui na La casa de Câmbio, você encontra as moedas dos principais
+                    países. Contamos com Moedas novas, e com a qualidade que você precisa. Efetivamos as trocas em
+                    Dólar Americano, Euro e para outras moedas, entrar em contato com a nossa equipe para verificar
+                    a disponibilidade fazendo seu <a href="cadastro.html" id="a-cad-link">cadastro</a> ou faça sua
+                    conversão online.<br><br>Para quem quer economizar e aproveitar ainda mais a viagem!</p>
+                <button class="btn"><span><a class="sobre-nos" href="conversao.html" target="_blank">Faça sua conversão</a></span></button>
+                <button class="btn"><span><a class="sobre-nos" href="calculadora(1).html" target="_blank">Calcule seus gastos</a></span></button>
+            </section>
+
+            <section class="img-meio-main">
+                <img src="img/Ellipse 6.png" id="cofre">
+            </section>
+        </section> -->
+
+        <section id="about-us">
+            <article class="desenvolvimento">
+                <h2 class="h2-desenvolvimento" id="titulo-about">Desenvolvimento da página</h2>
+                <p class="texto-desenvolvimento">
+                   La casa de Câmbio foi um projeto desenvolvido por estudantes de Web FullStack da SoulCode Academy, visando implementar os conhecimentos adquiridos em HTML, CSS E JAVASCRIPT com a finalidade de criar uma landing page inovadora contendo botões de acessibilidade e modo noturno para atender usuários com baixa visão, além de linkar para outras páginas funcionais como uma página de Calculadora (contendo 2 modos: simples e científica), página de conversão de moedas (Dólar americano, dólar canadense, Real brasileiro, Euro, Libra e peso argentino) e uma página de cadastro com validações nos campos do formulário.
+                </p>
+            </article>
+            <article class="people-box">
+                <img class="fotos-us" src="img/wandy.png" alt="wanessa">
+                <span class="nome-us">Wanessa Lanne</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Full Stack Developer na SoulCode Academy, e do 5º semestre de Estética e cosmética
+                        UNIFAMETRO. </p>
+                </div>
+            </article>
+            <article class="people-box">
+                <img class="fotos-us" src="img/mag.png" alt="margareth">
+                <span class="nome-us">Margareth Reis</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Web Full Stak Developer na SoulCode Academy, também formação em farmácia moradora de
+                        Embu das Artes, São Paulo.
+                    </p>
+                </div>
+            </article>
+            <article class="people-box">
+                <img class="fotos-us" src="img/Sem título.png" alt="ale">
+                <span class="nome-us">Alessandro Almeida</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Full Stack Developer na SoulCode Academy e professor de matemática.
+                    </p>
+                </div>
+            </article>
+            <article class="people-box">
+                <img class="fotos-us" src="img/marcelly.png" alt="marcely">
+                <span class="nome-us">Marcelly Monteiro</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Full Stack Developer na SoulCode Academy, e do 4º semestre de Tecnologia da Informação
+                        na UNIVESP. </p>
+                </div>
+            </article>
+            <article class="people-box">
+                <img class="fotos-us" src="img/rafa.png" alt="rafa">
+                <span class="nome-us">Rafael Pontes</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Full Stack Developer na SoulCode Academy e do 4º semestre de Análise e Desenvolvimento
+                        de Sistemas na Universidade São Francisco.
+                    </p>
+                </div>
+            </article>
+            <article class="people-box">
+                <div class="fotos-us"><img class="fotos-us" src="img/murat.png" alt="murat"></div>
+                <span class="nome-us">Alessandra Murat</span>
+                <div class="texto-us">
+                    <p>
+                        Estudante Full Stack Developer na SoulCode Academy e estudante de Ciência da Computação.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <section class="footer-logo">
+            <img src="img/logo2-cut.png" alt="logo-rodape" width="250px">
+        </section>
+        <section class="redes-sociais">
+            <a href="https://www.facebook.com/SoulCodeAcademy/" target="_blank"><img class="redes-img"
+                    src="img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img class="redes-img"
+                    src="img/instagram.png" alt="instagram"></a>
+            <a href="#"><img class="redes-img" src="img/whatsapp.png" alt="whatsapp"></a>
+            <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="redes-img"
+                    src="img/linkedin.png" alt="linkedin"></a>
+        </section>
+        <section class="copyright-footer">
+            <span id="copyright-text">&copy; La Casa de Câmbio - 2021. Todos os direitos reservados.</span>
+        </section>
+    </footer>
+    <script src="js/modelo.js"></script>
+</body>
+
+</html>
